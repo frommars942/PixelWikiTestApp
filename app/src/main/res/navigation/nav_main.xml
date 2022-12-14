@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.testing.pixelwikiapp.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/to_figures"
+            app:destination="@id/figuresFragment" />
+        <action
+            android:id="@+id/to_lightning"
+            app:destination="@id/lightningFragment" />
+        <action
+            android:id="@+id/to_coloring"
+            app:destination="@id/coloringFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/figuresFragment"
+        android:name="com.testing.pixelwikiapp.FiguresFragment"
+        android:label="fragment_figures"
+        tools:layout="@layout/fragment_figures" >
+        <action
+            android:id="@+id/to_menu1"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lightningFragment"
+        android:name="com.testing.pixelwikiapp.LightningFragment"
+        android:label="fragment_lightning"
+        tools:layout="@layout/fragment_lightning" >
+        <action
+            android:id="@+id/to_menu2"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coloringFragment"
+        android:name="com.testing.pixelwikiapp.ColoringFragment"
+        android:label="fragment_coloring"
+        tools:layout="@layout/fragment_coloring" >
+        <action
+            android:id="@+id/to_menu3"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

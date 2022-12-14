@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC7B068"
+    tools:context=".MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/figures_block"
+            android:layout_width="385dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_margin="45dp"
+            android:background="#D98E8051"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="50dp"
+                android:scaleType="center"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/figure1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/press_start_2p"
+                android:text="FIGURES"
+                android:textAlignment="center"
+                android:textColor="#010101"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="50dp"
+                android:scaleType="center"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/figure2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lightning_block"
+            android:layout_width="385dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_margin="45dp"
+            android:background="#D98E8051"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="35dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/cylinder_small" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/press_start_2p"
+                android:text="LIGHTNING"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="35dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/sphere_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coloring_block"
+            android:layout_width="385dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_margin="45dp"
+            android:background="#D98E8051"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/bar1" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/bar2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/press_start_2p"
+                android:text="COLORING"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/bar3" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:src="@drawable/bar4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
